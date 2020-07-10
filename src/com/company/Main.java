@@ -45,10 +45,8 @@ else {
                     int z1 = 0;
                     int z2 = 0;
 
-                    for (int j=1; j<q+1;j++) {
-                        //if ((q==i)||(q==(x-i))){
-                        //    continue;
-                       // }
+                    for (int j=2; j<q+1;j++) {
+
                         if ((x-i)%j==0) {
                             z1++;
                         }
@@ -67,7 +65,6 @@ else {
             }
         }
 
-//// next
-
+        //primes
 
 
