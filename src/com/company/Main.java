@@ -21,7 +21,7 @@ for (int i=1; i<q+1;i++){
 }
 
 if (z==1){
-    System.out.println("číslo je prvočíslo");
+    System.out.println("Číslo je prvočíslo. Ak chcete pokračovať na rozklad čísel, zadajte párne číslo.");
 }
 else
     System.out.println("číslo nie je prvočíslo a počet delitelov je "+ (z+1)); //upraviť
@@ -30,6 +30,17 @@ else
 
         if (z!=1){
             System.out.println("zadajte 1, ak chcete nájsť dva prvé prvočíselné súčty čísla , alebo 2, chcete vypísať všetky dvojice prvočíselných súčtov");
+            String vstup = sc.nextLine();
+            int x1 = Integer.parseInt(vstup);
+            if (x1==1){
+                for (int i=1; i<x;i++){
+                   if ((i%2!=0) && ((x-i)%2!=0)){
+                       System.out.println("Prvé dve prvočísla, ktorých súčet je rovný danému číslu: "+ i +" a "+(int)((x-i)));
+                       break;
+                    }
+                }
+
+            }
         }
 //// next
 
