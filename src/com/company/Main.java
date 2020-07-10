@@ -24,9 +24,16 @@ if (z==1){
     System.out.println("číslo je prvočíslo");
 }
 else
-    System.out.println("číslo nie je prvočíslo a počet delitelov je "+ (z+1));
+    System.out.println("číslo nie je prvočíslo a počet delitelov je "+ (z+1)); //upraviť
 
 // druhá časť - Goldbachova hypotéza - even number = sum of two odd numbers
+
+        if (z!=1){
+            System.out.println("zadajte 1, ak chcete nájsť dva prvé prvočíselné súčty čísla , alebo 2, chcete vypísať všetky dvojice prvočíselných súčtov");
+        }
+////
+
+
 
 
 
