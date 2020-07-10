@@ -31,8 +31,7 @@ else
         if (z!=1){
             System.out.println("zadajte 1, ak chcete nájsť dva prvé prvočíselné súčty čísla , alebo 2, chcete vypísať všetky dvojice prvočíselných súčtov");
         }
-////
-
+//// další kod
 
 
 
