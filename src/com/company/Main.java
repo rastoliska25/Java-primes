@@ -47,15 +47,19 @@ public class Main {
                         int z1 = 0;
                         int z2 = 0;
 
-                        for (int j = 2; j < q + 1; j++) {
+                        for (int j = 1; j < (x-i) ; j++) {
 
                             if ((x - i) % j == 0) {
                                 z1++;
                             }
+                        }
+
+                        for (int j = 1; j < i ; j++) {
                             if ((i % j) == 0) {
                                 z2++;
                             }
                         }
+
                         if ((z2 == 1) && (z1 == 1)) {
                             System.out.println("Prvočísla, ktorých súčet je rovný danému číslu: " + i + " a " + (int) ((x - i)));
                             break;
@@ -63,7 +67,7 @@ public class Main {
                     }
                 }
             }
-            System.out.println("chcete zadat dalsie cislo? (ano/nie)");
+            System.out.println("Chcete zadať ďalšie číslo? (ano/nie)");
                     pokracovat = sc.nextLine();
 
 
@@ -71,7 +75,7 @@ public class Main {
 
 
         }
-        System.out.println("Ďakujem za použitie programu prvočísla");
+        System.out.println("Ďakujem za použitie programu prvočísla.");
     }
 }
 
