@@ -13,6 +13,8 @@ public class Main {
             String y = sc.nextLine();
             Double x = Double.parseDouble(y);
             Double q = Math.sqrt(x);
+            int pocetprvocisel=0;
+
 
             int z = 0;
             int delitel = 0;
@@ -66,6 +68,43 @@ public class Main {
                         }
                     }
                 }
+
+
+
+
+
+                if (x1 == 2) {
+                    for (int i = 1; i < x; i++) {
+                        int z1 = 0;
+                        int z2 = 0;
+
+                        for (int j = 1; j < (x-i) ; j++) {
+
+                            if ((x - i) % j == 0) {
+                                z1++;
+                            }
+                        }
+
+                        for (int j = 1; j < i ; j++) {
+                            if ((i % j) == 0) {
+                                z2++;
+                            }
+                    }
+
+                        if ((z2 == 1) && (z1 == 1)) {
+                            pocetprvocisel++;
+                            System.out.println("Prvočísla, ktorých súčet je rovný danému číslu: " + i + " a " + (int) ((x - i)) + " a pocet prvočíselných dvojíc je " + pocetprvocisel);
+                        }
+                    }
+                }
+
+
+
+
+
+
+
+
             }
             System.out.println("Chcete zadať ďalšie číslo? (ano/nie)");
                     pokracovat = sc.nextLine();
