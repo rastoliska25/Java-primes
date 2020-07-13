@@ -13,8 +13,8 @@ public class Main {
             String y = sc.nextLine();
             Double x = Double.parseDouble(y);
             Double q = Math.sqrt(x);
-            int pocetprvocisel=0;
-
+            int pocetdvojic=0;
+Primes primes = new Primes();
 
             int z = 0;
             int delitel = 0;
@@ -69,7 +69,7 @@ public class Main {
                     }
                 }
 
-
+// uloženie dvojíc do pola
 
 
 
@@ -92,16 +92,44 @@ public class Main {
                     }
 
                         if ((z2 == 1) && (z1 == 1)) {
-                            pocetprvocisel++;
-                            System.out.println("Prvočísla, ktorých súčet je rovný danému číslu: " + i + " a " + (int) ((x - i)) + " a pocet prvočíselných dvojíc je " + pocetprvocisel);
+                            pocetdvojic++;
                         }
                     }
+
+int [] pole = new int [pocetdvojic];
+                    primes.x = pocetdvojic;
+
+int umiestnenie =0;
+                    for (int i = 1; i < x; i++) {
+                        int z1 = 0;
+                        int z2 = 0;
+
+                        for (int j = 1; j < (x-i) ; j++) {
+
+                            if ((x - i) % j == 0) {
+                                z1++;
+                            }
+                        }
+
+                        for (int j = 1; j < i ; j++) {
+                            if ((i % j) == 0) {
+                                z2++;
+                            }
+                        }
+
+                        if ((z2 == 1) && (z1 == 1)) {
+                           pole[umiestnenie] = i;
+                           umiestnenie++;
+                        }
+                    }
+                    System.out.println("výpis prvočíselných dvojíc: ");
+for (int i : pole){
+    System.out.print(i + "+" + ((int)(x-i)) +"\n");
+}
+
                 }
 
-
-
-
-
+/////
 
 
 
