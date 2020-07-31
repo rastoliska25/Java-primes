@@ -15,26 +15,13 @@ public class Main {
             Double q = Math.sqrt(x);
             int pocetdvojic=0;
 
-            int z = 0;
-            int delitel = 0;
+
             // prvá časť - zistenie prvočísla
-            for (int i = 1; i < q + 1; i++) {
-                if (x % i == 0) {
-                    z++;
-                }
 
-            }
+            Jeprime zistenie = new Jeprime();
+            zistenie.prime(x,q);
 
-            if (z == 1) {
-                System.out.println("Číslo je prvočíslo. Ak chcete pokračovať na rozklad čísel, zadajte párne číslo.");
-            } else {
-                for (int i = 1; i < x + 1; i++) {
-                    if (x % i == 0) {
-                        delitel++;
-                    }
-                }
-                System.out.println("číslo nie je prvočíslo a počet delitelov je " + (delitel)); //upraviť
-            }
+int z = 0; // doplnioť "z" z Jeprime
 
 // druhá časť - Goldbachova hypotéza - even number = sum of two odd numbers
 
@@ -128,6 +115,18 @@ for (int i : pole){
                 }
 
 /////
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
