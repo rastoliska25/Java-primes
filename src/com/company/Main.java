@@ -14,7 +14,6 @@ public class Main {
             Double x = Double.parseDouble(y);
             Double q = Math.sqrt(x);
             int pocetdvojic=0;
-Primes primes = new Primes();
 
             int z = 0;
             int delitel = 0;
@@ -97,7 +96,6 @@ Primes primes = new Primes();
                     }
 
 int [] pole = new int [pocetdvojic];
-                    primes.x = pocetdvojic;
 
 int umiestnenie =0;
                     for (int i = 1; i < x; i++) {
