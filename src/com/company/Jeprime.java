@@ -1,10 +1,10 @@
 package com.company;
 
 public class Jeprime {
+int z = 0;
+int delitel = 0;
 
     void prime(double x, double q) {
-        int z = 0;
-        int delitel = 0;
 
         for (int i = 1; i < q + 1; i++) {
             if (x % i == 0) {
