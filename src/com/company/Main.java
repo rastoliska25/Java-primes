@@ -116,26 +116,9 @@ for (int i : pole){
 
 /////
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             }
             System.out.println("Chcete zadať ďalšie číslo? (ano/nie)");
                     pokracovat = sc.nextLine();
-
-
-
 
 
         }
