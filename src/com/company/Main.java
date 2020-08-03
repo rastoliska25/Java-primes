@@ -21,9 +21,9 @@ public class Main {
             Jeprime zistenie = new Jeprime();
             zistenie.prime(x,q);
 
-int z = zistenie.z; // doplniť "z" z Jeprime
+int z = zistenie.z;
 
-// druhá časť - Goldbachova hypotéza - even number = sum of two odd numbers
+// druhá časť
 
 
             if (z != 1) {
