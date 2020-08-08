@@ -6,7 +6,7 @@ public class Vypis {
     Scanner sc = new Scanner(System.in);
     void vypisanie (int z, double x){
         int pocetdvojic=0;
-
+        boolean neexistuje=true;
         if (z != 1) {
             System.out.println("zadajte 1, ak chcete nájsť dve prvé prvočíselné súčty čísla , alebo 2, chcete vypísať všetky dvojice prvočíselných súčtov");
             String vstup = sc.nextLine();
@@ -33,6 +33,7 @@ public class Vypis {
 
                     if ((z2 == 1) && (z1 == 1)) {
                         System.out.println("Prvočísla, ktorých súčet je rovný danému číslu: " + i + " a " + (int) ((x - i)));
+                        neexistuje = false;
                         break;
                     }
                 }
@@ -88,18 +89,19 @@ public class Vypis {
                     if ((z2 == 1) && (z1 == 1)) {
                         pole[umiestnenie] = i;
                         umiestnenie++;
+                        neexistuje = false;
                     }
                 }
                 System.out.println("výpis prvočíselných dvojíc: ");
                 for (int i : pole){
-                    System.out.print(i + "+" + ((int)(x-i)) +"\n");
+                        System.out.print(i + "+" + ((int)(x-i)) +"\n");
                 }
+
 
             }
 
-
         }
-
+        if (neexistuje) System.out.println("Neexistuje ani jedna prvočíselná dvojica.");
 
 
     }

@@ -21,7 +21,7 @@ int delitel = 0;
                     delitel++;
                 }
             }
-            System.out.println("číslo nie je prvočíslo a počet delitelov je " + (delitel)); //upraviť
+            System.out.println("číslo nie je prvočíslo a počet delitelov je " + (delitel));
         }
     }
 }

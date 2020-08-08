@@ -6,22 +6,25 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String pokracovat = "ano";
+        String pokracovat;
 
-        while (pokracovat.equals("ano")) {
+        do {
             System.out.println("napíšte číslo:");
-            String y = sc.nextLine();
-            Double x = Double.parseDouble(y);
+            String cislo = sc.nextLine();
+            Double cisloparsed = Double.parseDouble(cislo);
+            double x;
+            x = cisloparsed > 0 ? cisloparsed :-cisloparsed;
+            System.out.println(x);
             Double q = Math.sqrt(x);
 
 
-            // prvá časť - zistenie prvočísla
+            // prvá časť - zistenie
 
             Jeprime zistenie = new Jeprime();
             zistenie.prime(x,q);
 
 
-// druhá časť
+// druhá časť - výpis
 Vypis vypis = new Vypis();
 vypis.vypisanie(zistenie.z, x);
 
@@ -30,7 +33,7 @@ vypis.vypisanie(zistenie.z, x);
                     pokracovat = sc.nextLine();
 
 
-        }
+        } while (pokracovat.equals("ano"));
         System.out.println("Ďakujem za použitie programu prvočísla.");
     }
 }
