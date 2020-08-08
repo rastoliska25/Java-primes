@@ -14,7 +14,7 @@ int delitel = 0;
         }
 
         if (z == 1) {
-            System.out.println("Číslo je prvočíslo. Ak chcete pokračovať na rozklad čísel, zadajte párne číslo.");
+            System.out.println("Číslo je prvočíslo. Ak chcete pokračovať na prvočíselný rozklad, zadajte iné číslo.");
         } else {
             for (int i = 1; i < x + 1; i++) {
                 if (x % i == 0) {
